@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    background-color: orange;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+.my-box {
+border-radius: 5px;
+text-align: center;
+height: 5rem;
+line-height: 5rem;
+font-size: 20px;
+margin-bottom: 5px;
+box-shadow: 2px 2px 5px black;
+}
+
+.main {
+background-color: rgb(36, 39, 207);
+font-family: Arial, sans-serif;
+font-weight: normal;
+}
+
+.empty {
+font-family: Arial, sans-serif;
+font-weight: normal;
+background-color: transparent;
+}
+
+.sidebar {
+font-family: Arial, sans-serif;
+font-weight: normal;
+background-color: red;
+}
+
+.footer {
+font-family: Arial, sans-serif;
+font-weight: normal;
+background-color: green;
+}

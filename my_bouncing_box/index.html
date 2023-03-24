@@ -1,0 +1,34 @@
+<html style='background-color: black'>
+    <div id="my_bouncing_box" style= "background-color: blue; border-radius: 3px; position: absolute; left: 0px; top: 0px; min-width: 100px; min-height: 100px; text-align: center; font-weight: bold; color: #999;" >
+        Not loaded
+    </div>
+    <script type="text/javascript">
+    // YOUR CODE
+    let velocityX = 30;
+    let velocityY = 30;
+    const my_bouncing_box = document.getElementById("my_bouncing_box");
+    my_bouncing_box.innerText =  "qwasar.io";
+    
+    const width = window.innerWidth;
+    const height = window.innerHeight;
+    
+    let X = width / 2;
+    let Y = height / 2;
+    my_bouncing_box.style.left = `${X}px`;
+    my_bouncing_box.style.top = `${Y}px`;
+    
+    setInterval(() => {
+        X += velocityX;
+        Y += velocityY;
+        my_bouncing_box.style.left = `${X}px`;
+        my_bouncing_box.style.top = `${Y}px`;
+
+        if (Y >= height || Y <= 0) {
+            velocityY *= -1;
+        }
+        if (X >= width || X <= 0) {
+            velocityX *= -1;
+        }
+    }, 500);
+    </script>
+</html>
